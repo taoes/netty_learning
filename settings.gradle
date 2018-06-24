@@ -1,0 +1,5 @@
+rootProject.name = 'netty'
+include '001_discard'
+include '002_demo'
+include '003_timeserver'
+
