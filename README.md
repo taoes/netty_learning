@@ -5,7 +5,7 @@
 1. [001_discard](./001_discard/README.md)
 2. [002_demo](./002_demo/README.md)
 3. [003_timeserver send time to client](./003_timeserver/README.md)
-4. [004_chat A simple chat service and client(./004_chat/README.md)
+4. [004_chat A simple chat service and client](./004_chat/README.md)
 5. [005_codec Netty's codec, decoder and encoder](./005_codec/README.md)
 
 `src` category container some code files, and like as base Knowledge points: ByteBuf, ComposeAndSets etc.

@@ -4,4 +4,5 @@ include '002_demo'
 include '003_timeserver'
 include '004_chat'
 include '005_codec'
+include '006_private_protocol'
 

@@ -16,12 +16,12 @@ import java.net.InetSocketAddress;
 public class LongClient {
 
   public static void main(String[] args) {
-    EventLoopGroup workgroup = new NioEventLoopGroup();
+    EventLoopGroup workGroup = new NioEventLoopGroup();
 
     try {
       Bootstrap bootstrap =
           new Bootstrap()
-              .group(workgroup)
+              .group(workGroup)
               .remoteAddress(new InetSocketAddress("localhost", 8080))
               .channel(NioSocketChannel.class)
               .handler(
@@ -39,7 +39,7 @@ public class LongClient {
     } catch (InterruptedException e) {
       e.printStackTrace();
     } finally {
-      workgroup.shutdownGracefully();
+      workGroup.shutdownGracefully();
     }
   }
 }
