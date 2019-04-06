@@ -2,4 +2,6 @@ rootProject.name = 'netty'
 include '001_discard'
 include '002_demo'
 include '003_timeserver'
+include '004_chat'
+include '005_codec'
 
