@@ -1,6 +1,6 @@
 # Netty Learn Notes
 
-The container is record my code on learn netty framework, if it is useful for you, you can use this in anywhere, but it can't some company by work style is 996.
+The container is record my codes on learn netty framework, if it is useful for you, you can use this in anywhere and  it can't used with some companies by work style is 996.
 
 And more information about 996.icu, please [access this site](https://github.com/996icu/996.ICU)
 
@@ -21,6 +21,13 @@ And more information about 996.icu, please [access this site](https://github.com
 
 ### 6. Simple private protocol base on netty
  [006_private_protocol ](./006_private_protocol/README.md)
+
+### 7. Simple http web service base on netty
+ [007_web_service](./007_web_service/README.md)
+
+
+### 8. Unit test of Channel handle
+
 
 > `src` category container some code files, and like as base Knowledge points: ByteBuf, ComposeAndSets etc.
 

@@ -5,4 +5,6 @@ include '003_timeserver'
 include '004_chat'
 include '005_codec'
 include '006_private_protocol'
+include '007_web_service'
+include '008_unit_test'
 
