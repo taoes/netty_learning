@@ -20,7 +20,7 @@ allprojects {
     }
 
     dependencies {
-        compile group: 'io.netty', name: 'netty-all', version: '5.0.0.Alpha2'
+        compile group: 'io.netty', name: 'netty-all', version: '4.1.34.Final'
 
         compile group: 'org.projectlombok', name: 'lombok', version: '1.18.0'
 
