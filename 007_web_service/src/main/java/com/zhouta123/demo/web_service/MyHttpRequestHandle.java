@@ -27,7 +27,7 @@ public class MyHttpRequestHandle extends SimpleChannelInboundHandler<FullHttpReq
     System.out.println("获取到参数是:" + s);
 
     //    判断类型
-    String uri = msg.uri();
+    String uri = "/".equals(msg.uri()) ? "/index.html" : msg.uri();
     System.out.println(uri);
 
     File file = new File("/tmp" + uri);
@@ -70,7 +70,7 @@ public class MyHttpRequestHandle extends SimpleChannelInboundHandler<FullHttpReq
             HttpVersion.HTTP_1_1, HttpResponseStatus.NOT_FOUND, Unpooled.wrappedBuffer(bytes));
 
     HttpHeaders heads = response.headers();
-    heads.add(HttpHeaderNames.CONTENT_TYPE,  "text/html;charset=UTF-8");
+    heads.add(HttpHeaderNames.CONTENT_TYPE, "text/html;charset=UTF-8");
     heads.add(HttpHeaderNames.CONNECTION, HttpHeaderValues.KEEP_ALIVE);
     heads.add(HttpHeaderNames.CONTENT_LENGTH, String.valueOf(response.content().readableBytes()));
     ctx.writeAndFlush(response);
